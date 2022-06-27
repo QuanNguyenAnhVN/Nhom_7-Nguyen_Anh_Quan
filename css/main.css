@@ -1,0 +1,329 @@
+
+/* ----------------------------------------------------------
+    Setting Color
+   ----------------------------------------------------------*/
+    :root{
+        --color-background: #000000;
+        --color-prime:#242424;    
+        --color-secondary: #ff0000;
+        --text-color: #888888;
+        --text-white: #ffffff;
+    }
+
+    
+ /* ----------------------------------------------------------
+    Body
+    ----------------------------------------------------------*/
+
+body{
+    font-family: Lato,sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+#main_container{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-background);
+    box-sizing: border-box;
+}
+
+
+
+/* ----------------------------------------------------------
+    Navbar
+   ----------------------------------------------------------*/
+
+#nav{  
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background);
+    height: 100%;
+    width: 7rem;
+    right: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+#nav .container{
+    border-radius: 2rem 0 0 2rem;
+    background-color: var(--color-prime);
+    height: 80%;
+    width: 7rem;
+}
+
+.navbar__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+    height: 100%;
+    font-size: 1rem;
+    
+}
+
+.navbar__item li{
+    padding: 1rem 0 1rem 0;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.navbar__item li:link{
+    color: var(--text-color);
+}
+
+.navbar__item li:visited{
+    color: var(--text-color);
+}
+
+.navbar__item li:active{
+    color: var(--color-secondary);
+}
+
+.navbar__item li:hover{
+    color: var(--color-background);
+}
+
+
+/* ----------------------------------------------------------
+    Main Conatiner 
+   ----------------------------------------------------------*/
+
+#container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background);
+    position: absolute;
+    height: 100% ;
+    width: calc(100% - 7rem);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+/* -----------------------------------------------
+    Home 
+   -----------------------------------------------*/
+#home{
+    position: relative;
+    display: grid;
+    grid-template-columns: 35% auto;
+    border-radius: 2rem;
+    background-color: var(--color-prime);
+    height: 80%;
+    width: 90%;
+    overflow: hidden;
+    box-sizing: border-box;
+    display:none;
+}
+
+.home__avatar{
+    margin: auto;
+    padding: auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.home__avatar > img {
+    border-radius: 2rem;
+}
+
+.home__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.home__info__icon{
+    display: inline;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.home__info h5{ font-size: 1rem;}
+
+.home__info h1{ font-size: 3.5rem;}
+
+.home__info h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.home__info hr{ width: 50%;}
+
+.home__info__icon li{
+    padding: 5px;
+    display: inline;
+    font-size: 2rem;
+}
+
+
+.home__info__icon a:link{
+    color: var(--text-color);
+}
+
+.home__info__icon a:visited{
+    color: var(--text-color);
+}
+
+.home__info__icon a:active{
+    color: var(--color-secondary)
+}
+
+.home__info__icon a:hover{
+    color: var(--color-background);
+}
+
+.home__info__button{
+    display: inline;
+    padding: 10px;
+}
+
+.home__info__button a{
+    text-decoration: none;
+    padding: 1rem 1rem;
+    background-color: var(--color-secondary);
+    color: var(--text-white);
+    letter-spacing: 1px;
+    border-radius: 4px;
+    border: 2px solid var(--color-secondary);
+    font-size: 1rem;
+}
+
+.home__info__button a:hover{ background-color: var(--color-prime)}
+
+/* -----------------------------------------------
+    Contact 
+   -----------------------------------------------*/
+#contact{
+    position: relative;
+    border-radius: 2rem;
+    background-color: var(--color-prime);
+    height: 80%;
+    width: 90%;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+#contact .contact__container {
+    margin: 0;
+    padding: 0;
+}
+
+#contact .contact__container .contact__container__header{
+    text-align: center;
+    padding: 30px;
+}
+#contact .contact__container .contact__container__header h5,h1{margin:0;}
+#contact .contact__container .contact__container__header h5{font-size: 1rem;}
+#contact .contact__container .contact__container__header h1{font-size: 3.5rem;}
+#contact .contact__container .contact__container__header hr{ width: 50%;}
+
+#contact .contact__container .contact__container__body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+
+#contact .contact__form{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    border: 2px var(--color-background) ;
+    padding: 0.5rem;
+}
+
+#contact .contact__form label{
+    font-size: 1.5rem;
+}
+#contact .contact__form input,textarea{
+    font-size: 1rem;
+    padding: 9px 14px;
+    border: none;
+    border-bottom: 1px solid #1d1d1d;
+    box-shadow: 0 0 10px rgba(8, 5, 5, 0.85);
+    border-radius: 5px;
+    background-color: var(--color-prime);
+    font-family: inherit;
+    font-size: inherit;
+    margin-top: 12px;
+}
+
+#contact .contact__form a{
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 1rem;
+    background-color: var(--color-secondary);
+    color: var(--text-white);
+    letter-spacing: 1px;
+    border-radius: 4px;
+    border: 2px solid var(--color-secondary);
+    font-size: 1rem;
+    grid-column: 1 / 1;
+    width: 40%;
+    margin-top: 12px;
+    border: 2px solid var(--color-secondary);
+    border-radius: 4px;
+}
+
+#contact .contact__form a:hover{
+    background-color: var(--color-prime);
+}
+
+#contact .contact__info{
+    padding: 0.5rem;
+    
+}
+
+#contact .contact__info__list ul{ 
+    color: var(--color-secondary);
+    list-style: none;
+}
+#contact .contact__info__list li{
+    height: 3rem;
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+#contact .contact__info__list li span{
+    font-size: 2.5rem;
+    width: 1rem;
+    padding-right: 50px;}
+
+#contact .contact__info__list li div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .contact__info__list li div h4{
+    margin: 0;
+}
+
+#contact .contact__info__list li div > h4{
+    height: 100%;
+    color: var(--text-white);
+    margin: 0;
+}
+
+
+
+
