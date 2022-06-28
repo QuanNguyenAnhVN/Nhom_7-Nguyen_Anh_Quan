@@ -23,25 +23,25 @@
 
 <body>
     <div class="main_container">
-        
+
         <!-- Navbar ------------------------------------------------------->
         <div id="nav">
             <div class="container">
                 <ul class="navbar__item">
                     <li onclick="moveHome()">
-                        <a class="home" ><i class="fa-solid fa-house-user"></i></a>
+                        <a class="home"><i class="fa-solid fa-house-user"></i></a>
                     </li>
                     <li>
                         <a class="about"><i class="fa-solid fa-user"></i></a>
                     </li>
-                    <li>
+                    <li onclick="movePortfolio()">
                         <a class="portfolio"><i class="fa-solid fa-toolbox"></i></a>
                     </li>
                     <li>
                         <a class="blog"><i class="fa-solid fa-blog"></i></a>
                     </li>
                     <li onclick="moveContact()">
-                        <a class="contact" ><i class="fa-solid fa-address-card"></i></a>
+                        <a class="contact"><i class="fa-solid fa-address-card"></i></a>
                     </li>
                 </ul>
             </div>
@@ -49,7 +49,7 @@
 
         <!-- Main Continaer ----------------------------------------------->
         <div id="container">
-            
+
             <!-- Home Tab -->
             <div id="home">
                 <div class="home__avatar">
@@ -91,12 +91,62 @@
                 </div>
             </div>
 
+            <!-- Portfolio Tab -->
+            <div id="portfolio">
+                <div class="portfolio__container">
+                    <div class="portfolio__container__header">
+                        <h5>Showcasing Some Of My Best Work</h5>
+                        <h1>My <span>Portfolio</span></h1>
+                        <hr />
+                    </div>
+
+                    <div class="portfolio__container__blog">
+                        <div class="portfolio__container__blog__select">
+                            <a class="select_0" onclick="select_0()">All</a>
+                            <a class="select_1" onclick="select_1()">Poland</a>
+                            <a class="select_2" onclick="select_2()">France</a>
+                            <a class="select_3" onclick="select_3()">Belgium</a>
+                            <a class="select_4" onclick="select_4()">Denmark</a>
+                        </div>
+                        <div class="portfolio__container__blog__selectItem">
+                            <div id ="p1" class="portfolio__container__blog__selectItem__item">
+                                <img src="./asset/img/p1.jpg" alt="">
+                            </div>
+                            <div id ="p2" class="portfolio__container__blog__selectItem__item">
+                                <img src="./asset/img/p2.jpg" alt="">
+                            </div>
+                            <div id ="p3" class="portfolio__container__blog__selectItem__item">
+                                <img src="./asset/img/p3.jpg" alt="">
+                            </div>
+                            <div id ="p4" class="portfolio__container__blog__selectItem__item">
+                                <img src="./asset/img/p4.jpg" alt="">
+                            </div>
+                            <div id ="p5" class="portfolio__container__blog__selectItem__item">
+                                <img src="./asset/img/p5.jpg" alt="">
+                            </div>
+                            <div id ="p6" class="portfolio__container__blog__selectItem__item">
+                                <img src="./asset/img/p6.jpg" alt="">
+                            </div>
+                            <div id ="p7" class="portfolio__container__blog__selectItem__item">
+                                <img src="./asset/img/p7.jpg" alt="">
+                            </div>
+                            <div id ="p8" class="portfolio__container__blog__selectItem__item">
+                                <img src="./asset/img/p8.jpg" alt="">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             <!-- Contact Tab -->
             <div id="contact">
                 <div class="contact__container">
                     <div class="contact__container__header">
                         <h5>Feel Free To Contact Me Anytimes</h5>
-                        <h1>My Contact</h1>
+                        <h1>My <span>Contact</span></h1>
                         <hr />
                     </div>
                     <div class="contact__container__body">
@@ -112,14 +162,15 @@
                             </form>
                         </div>
                         <div class="contact__info">
-                            <h2>Contact Me</h2>
-                            <h5>Always available for freelance work if the right project comes along, Feel free to contact me!</h5>
+                            <h2>Contact Info</h2>
+                            <h5>Always available for freelance work if the right project comes along, Feel free to
+                                contact me!</h5>
                             <div class="contact__info__list">
                                 <ul>
                                     <li>
                                         <span><i class="fa-solid fa-user"></i></span>
                                         <div>
-                                            <h4>Name</h4>
+                                            <h3>Name</h3>
                                             <h4>Adolf Hitler</h4>
                                         </div>
                                     </li>
@@ -127,10 +178,27 @@
                                     <li>
                                         <span><i class="fa-solid fa-map-pin"></i></span>
                                         <div>
-                                            <h4>Location</h4>
-                                            <h4>Adolf Hitler</h4>
+                                            <h3>Location</h3>
+                                            <h4>80538 München, German</h4>
                                         </div>
                                     </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-phone"></i></span>
+                                        <div>
+                                            <h3>Call Me</h3>
+                                            <h4>+49-30-5000-2000</h4>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <span><i class="fa-solid fa-envelope"></i></span>
+                                        <div>
+                                            <h3>Email</h3>
+                                            <h4>MakeGermanGreatAgain@gmail.com</h4>
+                                        </div>
+                                    </li>
+
                                 </ul>
                             </div>
                         </div>
