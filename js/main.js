@@ -1,3 +1,4 @@
+nav_home = document.getElementsByClassName("home");
 home = document.getElementById("home");
 about = document.getElementById("about");
 portfolio = document.getElementById("portfolio");
@@ -45,7 +46,7 @@ const Poland = document.querySelectorAll('#p2, #p3');
 const France = document.querySelectorAll('#p1, #p4');
 const Belgium = document.querySelectorAll('#p5, #p6');
 const Denmark = document.querySelectorAll('#p7, #p8');
-const All = document.querySelectorAll('#p1, #p2, #p3, #p4, #p5, #p6 , #p7, #p8')
+const All = document.querySelectorAll('#p1, #p2, #p3, #p4, #p5, #p6 , #p7, #p8');
 
 function select_0(){
     for (let i = 0; i < All.length; i++) {
