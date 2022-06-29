@@ -396,7 +396,7 @@ body{
 }
 
 .portfolio__container__blog__selectItem >*{
-   flex: 0 0 calc(25% - 10px); 
+   flex: 1 0 20%; 
 }
 .portfolio__container__blog__selectItem__item img{
     display: flex;
