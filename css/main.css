@@ -128,7 +128,6 @@ body{
     width: 90%;
     overflow: hidden;
     box-sizing: border-box;
-    display:none;
 }
 
 .home__avatar{
@@ -229,6 +228,7 @@ body{
     overflow-x: hidden;
     box-sizing: border-box;
     padding: 40px;
+    display: none;
 }
 
 .about__container__header{
