@@ -128,6 +128,7 @@ body{
     width: 90%;
     overflow: hidden;
     box-sizing: border-box;
+    animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 .home__avatar{
@@ -228,7 +229,9 @@ body{
     overflow-x: hidden;
     box-sizing: border-box;
     padding: 40px;
+    animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     display: none;
+    
 }
 
 .about__container__header{
@@ -336,6 +339,7 @@ body{
     overflow-x: hidden;
     box-sizing: border-box;
     padding: 40px;
+    animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     display:none
 }
 
@@ -388,12 +392,11 @@ body{
     flex-wrap: wrap;
     margin: -10px;
     padding: 20px;
-    
+    gap: 10px
 }
 
 .portfolio__container__blog__selectItem >*{
-   flex: 0 0 23.2%;
-   margin: 10px;
+   flex: 0 0 calc(25% - 10px); 
 }
 .portfolio__container__blog__selectItem__item img{
     display: flex;
@@ -414,6 +417,7 @@ body{
     overflow: hidden;
     box-sizing: border-box;
     padding: 40px;
+    animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     display: none;
 }
 
