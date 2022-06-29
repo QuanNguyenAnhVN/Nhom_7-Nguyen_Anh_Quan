@@ -29,95 +29,39 @@ const Poland = document.querySelectorAll('#p2, #p3');
 const France = document.querySelectorAll('#p1, #p4');
 const Belgium = document.querySelectorAll('#p5, #p6');
 const Denmark = document.querySelectorAll('#p7, #p8');
+const All = document.querySelectorAll('#p1, #p2, #p3, #p4, #p5, #p6 , #p7, #p8')
 
 function select_0(){
-    for (let i = 0; i < Poland.length; i++) {
-        Poland[i].style.display = "block";
-    }
-    
-    for (let i = 0; i < France.length; i++) {
-        France[i].style.display = "block";
+   
+   
+    for (let i = 0; i < All.length; i++) {
+        All[i].style.display = "block";
     }
 
-    for (let i = 0; i < Belgium.length; i++) {
-        Belgium[i].style.display = "block";
-    }
-
-    for (let i = 0; i < Denmark.length; i++) {
-        Denmark[i].style.display = "block";
-    }
 }
 
 function select_1(){
-    for (let i = 0; i < Poland.length; i++) {
-        Poland[i].style.display = "block";
+    
+    for(let i = 0; i < All.length; i++){
+        for(let n = 0;n < Poland.length;n++){
+            if (All[i] != Poland[n]){
+                All[i].style.display = "none";
+            } else All[i].style.display = "block";
+        }
     }
 
-    for (let i = 0; i < France.length; i++) {
-        France[i].style.display = "none";
-    }
-
-    for (let i = 0; i < Belgium.length; i++) {
-        Belgium[i].style.display = "none";
-    }
-
-    for (let i = 0; i < Denmark.length; i++) {
-        Denmark[i].style.display = "none";
-    }
 }
 
 function select_2(){
-    for (let i = 0; i < Poland.length; i++) {
-        Poland[i].style.display = "none";
-    }
-
-    for (let i = 0; i < France.length; i++) {
-        France[i].style.display = "block";
-    }
-
-    for (let i = 0; i < Belgium.length; i++) {
-        Belgium[i].style.display = "none";
-    }
-
-    for (let i = 0; i < Denmark.length; i++) {
-        Denmark[i].style.display = "none";
-    }
+    
 }
 
 function select_3(){
-    for (let i = 0; i < Poland.length; i++) {
-        Poland[i].style.display = "none";
-    }
-
-    for (let i = 0; i < France.length; i++) {
-        France[i].style.display = "none";
-    }
-
-    for (let i = 0; i < Belgium.length; i++) {
-        Belgium[i].style.display = "block";
-    }
-
-    for (let i = 0; i < Denmark.length; i++) {
-        Denmark[i].style.display = "none";
-    }
+   
 }
 
 function select_4(){
-    for (let i = 0; i < Poland.length; i++) {
-        Poland[i].style.display = "none";
-    }
-
-    for (let i = 0; i < France.length; i++) {
-        France[i].style.display = "none";
-    }
-
-    for (let i = 0; i < Belgium.length; i++) {
-        Belgium[i].style.display = "none";
-    }
-
-    for (let i = 0; i < Denmark.length; i++) {
-        Denmark[i].style.display = "block";
-    }
+   
 }
 
 
