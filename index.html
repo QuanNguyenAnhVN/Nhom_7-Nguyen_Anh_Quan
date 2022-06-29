@@ -29,19 +29,19 @@
             <div class="container">
                 <ul class="navbar__item">
                     <li onclick="moveHome()">
-                        <a class="home"><i class="fa-solid fa-house-user"></i></a>
+                        <a href="#" class="home"><i class="fa-solid fa-house-user"></i></a>
                     </li>
-                    <li>
-                        <a class="about"><i class="fa-solid fa-user"></i></a>
+                    <li onclick="moveAbout()">
+                        <a href="#" class="about"><i class="fa-solid fa-user"></i></a>
                     </li>
                     <li onclick="movePortfolio()">
-                        <a class="portfolio"><i class="fa-solid fa-toolbox"></i></a>
+                        <a href="#" class="portfolio"><i class="fa-solid fa-toolbox"></i></a>
                     </li>
                     <li>
-                        <a class="blog"><i class="fa-solid fa-blog"></i></a>
+                        <a href="#" class="blog"><i class="fa-solid fa-blog"></i></a>
                     </li>
                     <li onclick="moveContact()">
-                        <a class="contact"><i class="fa-solid fa-address-card"></i></a>
+                        <a href="#" class="contact"><i class="fa-solid fa-address-card"></i></a>
                     </li>
                 </ul>
             </div>
@@ -91,6 +91,69 @@
                 </div>
             </div>
 
+            <!-- About Tab -->
+            <div id="about">
+                <div class="about__container">
+                    <div class="about__container__header">
+                        <h5>Showcasing Some Of My Best Work</h5>
+                        <h1>About <span>Me</span></h1>
+                        <hr />
+                    </div>
+
+                    <div class="about__info">
+                        <div class="about__info__img">
+                            <img src="./asset/img/Hitler_Portrait.jpg" alt="Hitler_Portrait" />
+                        </div>
+
+                        <div class="about__info__main">
+                            <h5>Who Am <span>I</span>?</h5>
+                            <h2>I'm Adolf Hitler, A <span>German Dictator</span> And <span>Unpopular Artist</span></h2>
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vero, magnam expedita
+                                magni commodi sunt rem, reiciendis esse temporibus cumque itaque corporis! Dolore, atque
+                                esse? Adipisci ipsum libero voluptas et.</p>
+                            <h2>Personal <span>Informations</span></h2>
+                            <div class="about__info__main--grid">
+                                <div class="about__info__main--grid--1">
+                                    <p>First Name: <span>Hitler</span></p>
+                                    <p>Last Name: <span>Adolf</span></p>
+                                    <p>Address:<span>80538 München</span> </p>
+                                    <p>From: <span>Austrian</span></p>
+                                    <p>Age: <span>56 years</span></p>
+                                </div>
+                                   
+                                <div class="about__info__main--grid--2">
+                                    <p>E-mail: <span>MakeGermanGreatAgain@gmail.com</span></p>
+                                    <p>Phone: <span>+49-30-5000-2000</span></p>
+                                    <p>Skype:<span>80538 München</span> </p>
+                                    <p>Language: <span>Austrian</span></p>
+                                    <p>Freelance: <span>56 years</span></p>
+                                </div>
+                            </div>
+
+                            <a href="#">Download CV <span></span></a>
+                            <ul class="about__info__main--list">
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-github-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             <!-- Portfolio Tab -->
             <div id="portfolio">
                 <div class="portfolio__container">
@@ -102,35 +165,35 @@
 
                     <div class="portfolio__container__blog">
                         <div class="portfolio__container__blog__select">
-                            <a class="select_0" onclick="select_0()">All</a>
-                            <a class="select_1" onclick="select_1()">Poland</a>
-                            <a class="select_2" onclick="select_2()">France</a>
-                            <a class="select_3" onclick="select_3()">Belgium</a>
-                            <a class="select_4" onclick="select_4()">Denmark</a>
+                            <a href="#" class="select_0" onclick="select_0()">All</a>
+                            <a href="#" class="select_1" onclick="select_1()">Poland</a>
+                            <a href="#" class="select_2" onclick="select_2()">France</a>
+                            <a href="#" class="select_3" onclick="select_3()">Belgium</a>
+                            <a href="#" class="select_4" onclick="select_4()">Denmark</a>
                         </div>
                         <div class="portfolio__container__blog__selectItem">
-                            <div id ="p1" class="portfolio__container__blog__selectItem__item">
+                            <div id="p1" class="portfolio__container__blog__selectItem__item">
                                 <img src="./asset/img/p1.jpg" alt="">
                             </div>
-                            <div id ="p2" class="portfolio__container__blog__selectItem__item">
+                            <div id="p2" class="portfolio__container__blog__selectItem__item">
                                 <img src="./asset/img/p2.jpg" alt="">
                             </div>
-                            <div id ="p3" class="portfolio__container__blog__selectItem__item">
+                            <div id="p3" class="portfolio__container__blog__selectItem__item">
                                 <img src="./asset/img/p3.jpg" alt="">
                             </div>
-                            <div id ="p4" class="portfolio__container__blog__selectItem__item">
+                            <div id="p4" class="portfolio__container__blog__selectItem__item">
                                 <img src="./asset/img/p4.jpg" alt="">
                             </div>
-                            <div id ="p5" class="portfolio__container__blog__selectItem__item">
+                            <div id="p5" class="portfolio__container__blog__selectItem__item">
                                 <img src="./asset/img/p5.jpg" alt="">
                             </div>
-                            <div id ="p6" class="portfolio__container__blog__selectItem__item">
+                            <div id="p6" class="portfolio__container__blog__selectItem__item">
                                 <img src="./asset/img/p6.jpg" alt="">
                             </div>
-                            <div id ="p7" class="portfolio__container__blog__selectItem__item">
+                            <div id="p7" class="portfolio__container__blog__selectItem__item">
                                 <img src="./asset/img/p7.jpg" alt="">
                             </div>
-                            <div id ="p8" class="portfolio__container__blog__selectItem__item">
+                            <div id="p8" class="portfolio__container__blog__selectItem__item">
                                 <img src="./asset/img/p8.jpg" alt="">
                             </div>
 
