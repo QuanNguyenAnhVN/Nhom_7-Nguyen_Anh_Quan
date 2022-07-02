@@ -6,75 +6,79 @@ contact = document.getElementById("contact");
 All_nav = document.querySelectorAll("#home, #about, #portfolio, #contact");
 // Navbar Selection ----------------------------------------------
 function moveHome() {
-   for (let i=0; i <All_nav.length;i++){
-        if(All_nav[i] == home){
+    for (let i = 0; i < All_nav.length; i++) {
+        if (All_nav[i] == home) {
             All_nav[i].style.display = "grid";
         } else All_nav[i].style.display = "none";
-   }
+    }
 }
 
 function moveAbout() {
-    for (let i=0; i <All_nav.length;i++){
-        if(All_nav[i] == about){
+    for (let i = 0; i < All_nav.length; i++) {
+        if (All_nav[i] == about) {
             All_nav[i].style.display = "grid";
         } else All_nav[i].style.display = "none";
-   }
+    }
 
 }
 
 function movePortfolio() {
-    for (let i=0; i <All_nav.length;i++){
-        if(All_nav[i] == portfolio){
+    for (let i = 0; i < All_nav.length; i++) {
+        if (All_nav[i] == portfolio) {
             All_nav[i].style.display = "grid";
         } else All_nav[i].style.display = "none";
-   }
-    
+    }
+
 }
 
 function moveContact() {
-    for (let i=0; i <All_nav.length;i++){
-        if(All_nav[i] == contact){
+    for (let i = 0; i < All_nav.length; i++) {
+        if (All_nav[i] == contact) {
             All_nav[i].style.display = "grid";
         } else All_nav[i].style.display = "none";
-   }
+    }
 }
 
 
-
 // Portfolio Selection ------------------------------------------
-const Poland = document.querySelectorAll('#p2, #p3');
-const France = document.querySelectorAll('#p1, #p4');
-const Belgium = document.querySelectorAll('#p5, #p6');
-const Denmark = document.querySelectorAll('#p7, #p8');
-const All = document.querySelectorAll('#p1, #p2, #p3, #p4, #p5, #p6 , #p7, #p8');
+var Poland = document.querySelectorAll('#p2, #p3');
+var France = document.querySelectorAll('#p1, #p4');
+var Belgium = document.querySelectorAll('#p5, #p6');
+var Denmark = document.querySelectorAll('#p7, #p8');
+var All = document.querySelectorAll('#p1,#p2,#p3, #p4, #p5, #p6 , #p7, #p8');
 
-function select_0(){
+function select_all() {
     for (let i = 0; i < All.length; i++) {
         All[i].style.display = "block";
     }
 }
 
-function select_1(){
-    for(let i = 0; i < All.length; i++){
-        for(let n = 0;n < Poland.length;n++){
-            if (All[i] != Poland[n]){
+function poland() {
+    for (let i = 0; i < All.length; i++) {
+        const imageData = All[i].getAttribute('data-image');
+        for (let n = 0; n < Poland.length; n++) {
+            const imageDataShow = Poland[n].getAttribute('data-image');
+            if (imageDataShow == imageData) {
+                All[i].style.display = "block";
+            } else{
                 All[i].style.display = "none";
-            } else All[i].style.display = "block";
+            }
         }
     }
 }
 
-function select_2(){
-    
-}
+    function france() {
+        
+        
+    }
 
-function select_3(){
-   
-}
+    function belgium() {
 
-function select_4(){
-   
-}
+    }
+
+    function denmark() {
+
+    }
 
 
 
