@@ -4,7 +4,9 @@
 <head>
     <title></title>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Anh Quan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Personal Portfolio - Adolf Hitler" />
 
     <link rel="icon" type="image/x-icon" href="./asset/icon/favicon.png" />
 
@@ -19,29 +21,27 @@
     <script defer src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js"></script>
     <script defer src="./node_modules/@fortawesome/fontawesome-free/js/brands.js"></script>
     <script defer src="./node_modules/@fortawesome/fontawesome-free/js/solid.js"></script>
-
 </head>
 
 <body>
     <div class="main_container">
-
         <!-- Navbar ------------------------------------------------------->
         <div id="nav">
             <div class="container">
                 <ul id="navbar-items" class="navbar__item">
-                    <li id="nav-home" onclick="moveHome()">
+                    <li id="nav_home">
                         <a href="#" class="home"><i class="fa-solid fa-house-user"></i></a>
                     </li>
-                    <li id="nav_about" onclick="moveAbout()">
+                    <li id="nav_about">
                         <a href="#" class="about"><i class="fa-solid fa-user"></i></a>
                     </li>
-                    <li onclick="movePortfolio()">
+                    <li id="nav_portfolio">
                         <a href="#" class="portfolio"><i class="fa-solid fa-toolbox"></i></a>
                     </li>
-                    <li>
+                    <li id="nav_blog">
                         <a href="#" class="blog"><i class="fa-solid fa-blog"></i></a>
                     </li>
-                    <li onclick="moveContact()">
+                    <li id="nav_contact">
                         <a href="#" class="contact"><i class="fa-solid fa-address-card"></i></a>
                     </li>
                 </ul>
@@ -50,7 +50,6 @@
 
         <!-- Main Continaer ----------------------------------------------->
         <div id="container">
-
             <!-- Home Tab -->
             <div id="home">
                 <div class="home__avatar">
@@ -86,8 +85,8 @@
                         magni sunt cupiditate soluta mollitia! Modi, dolores.
                     </p>
                     <div class="home__info__button">
-                        <a href="#">Hire Me</a>
-                        <a href="#">About Me</a>
+                        <a href="#" onclick="moveContact()">Hire Me</a>
+                        <a href="#" onclick="moveAbout()">About Me</a>
                     </div>
                 </div>
             </div>
@@ -108,16 +107,22 @@
 
                         <div class="about__info__main">
                             <h5>Who Am <span>I</span>?</h5>
-                            <h2>I'm Adolf Hitler, A <span>German Dictator</span> And <span>Unpopular Artist</span></h2>
-                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta vero, magnam expedita
-                                magni commodi sunt rem, reiciendis esse temporibus cumque itaque corporis! Dolore, atque
-                                esse? Adipisci ipsum libero voluptas et.</p>
+                            <h2>
+                                I'm Adolf Hitler, A <span>German Dictator</span> And
+                                <span>Unpopular Artist</span>
+                            </h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Soluta vero, magnam expedita magni commodi sunt rem,
+                                reiciendis esse temporibus cumque itaque corporis! Dolore,
+                                atque esse? Adipisci ipsum libero voluptas et.
+                            </p>
                             <h2>Personal <span>Informations</span></h2>
                             <div class="about__info__main--grid">
                                 <div class="about__info__main--grid--1">
                                     <p>First Name: <span>Hitler</span></p>
                                     <p>Last Name: <span>Adolf</span></p>
-                                    <p>Address: <span>80538 München</span> </p>
+                                    <p>Address: <span>80538 München</span></p>
                                     <p>From: <span>Austrian</span></p>
                                     <p>Age: <span>56 years</span></p>
                                 </div>
@@ -125,13 +130,13 @@
                                 <div class="about__info__main--grid--2">
                                     <p>E-mail: <span>MakeGermanGreatAgain@gmail.com</span></p>
                                     <p>Phone: <span>+49-30-5000-2000</span></p>
-                                    <p>Skype: <span>skype:AdolfHitler</span> </p>
+                                    <p>Skype: <span>skype:AdolfHitler</span></p>
                                     <p>Language: <span>Austrian, German</span></p>
                                     <p>Freelance: <span>Available</span></p>
                                 </div>
                             </div>
 
-                            <a href="#">Download CV <span></span></a>
+                            <a href="#">Download CV</a>
                             <ul class="about__info__main--list">
                                 <li>
                                     <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
@@ -159,67 +164,91 @@
                     </div>
 
                     <div class="resume__info">
-                        <div class="resume__info__education">
-                            
-                        </div>
+                        <div class="resume__info__education"></div>
 
-                        <div class="resume__info__experiment">
-
-                        </div>
-                        
+                        <div class="resume__info__experiment"></div>
                     </div>
-
                 </div>
             </div>
 
             <!-- Portfolio Tab -->
             <div id="portfolio">
-                <div class="portfolio__container">
-                    <div class="portfolio__container__header">
-                        <h5>Showcasing Some Of My Best Work</h5>
-                        <h1>My <span>Portfolio</span></h1>
-                        <hr />
-                    </div>
-
-                    <div class="portfolio__container__blog">
-                        <div class="portfolio__container__blog__select">
-                            <a href="#" class="all_portfolio" onclick="select_all()">All</a>
-                            <a href="#" class="poland" onclick="poland()">Poland</a>
-                            <a href="#" class="france" onclick="france()">France</a>
-                            <a href="#" class="belgium" onclick="belgium()">Belgium</a>
-                            <a href="#" class="denmark" onclick="denmark()">Denmark</a>
-                        </div>
-                        <div class="portfolio__container__blog__selectItem">
-                            <div id="p1" data-image="p1" class="portfolio_image portfolio__container__blog__selectItem__item">
-                                <img src="./asset/img/p1.jpg" alt="">
-                            </div>
-                            <div id="p2" data-image="p2" class="portfolio_image portfolio__container__blog__selectItem__item">
-                                <img src="./asset/img/p2.jpg" alt="">
-                            </div>
-                            <div id="p3" data-image="p3" class="portfolio_image portfolio__container__blog__selectItem__item">
-                                <img src="./asset/img/p3.jpg" alt="">
-                            </div>
-                            <div id="p4" data-image="p4" class="portfolio_image portfolio__container__blog__selectItem__item">
-                                <img src="./asset/img/p4.jpg" alt="">
-                            </div>
-                            <div id="p5" data-image="p5" class="portfolio_image portfolio__container__blog__selectItem__item">
-                                <img src="./asset/img/p5.jpg" alt="">
-                            </div>
-                            <div id="p6" data-image="p6" class="portfolio_image portfolio__container__blog__selectItem__item">
-                                <img src="./asset/img/p6.jpg" alt="">
-                            </div>
-                            <div id="p7" data-image="p7" class="portfolio_image portfolio__container__blog__selectItem__item">
-                                <img src="./asset/img/p7.jpg" alt="">
-                            </div>
-                            <div id="p8" data-image="p8" class="portfolio_image portfolio__container__blog__selectItem__item">
-                                <img src="./asset/img/p8.jpg" alt="">
-                            </div>
-
-
-                        </div>
-                    </div>
+                <div class="portfolio__container__header">
+                    <h5>Showcasing Some Of My Best Work</h5>
+                    <h1>My <span>Portfolio</span></h1>
+                    <hr />
                 </div>
 
+                <div class="portfolio__container__blog">
+                    <div class="portfolio__container__blog__select">
+                        <a href="#" class="all_portfolio" onclick="select_all()">All</a>
+                        <a href="#" class="poland" onclick="poland()">Poland</a>
+                        <a href="#" class="france" onclick="france()">France</a>
+                        <a href="#" class="belgium" onclick="belgium()">Belgium</a>
+                        <a href="#" class="denmark" onclick="denmark()">Denmark</a>
+                    </div>
+                    <div class="portfolio__container__blog__selectItem">
+                        <ul class="portfolio__items">
+                            <li id="p1">
+                                <img src="./asset/img/p1.jpg" alt="" />
+                                <div class="portfolio__items__info">
+                                    <h1>Invading....</h1>
+                                    <a href="#">Detail</a>
+                                </div>
+                            </li>
+                            <li id="p2">
+                                <img src="./asset/img/p2.jpg" alt="" />
+                                <div class="portfolio__items__info">
+                                    <h1>Invading....</h1>
+                                    <a href="#">Detail</a>
+                                </div>
+                            </li>
+                            <li id="p3">
+                                <img src="./asset/img/p3.jpg" alt="" />
+                                <div class="portfolio__items__info">
+                                    <h1>Invading....</h1>
+                                    <a href="#">Detail</a>
+                                </div>
+                            </li>
+                            <li id="p4">
+                                <img src="./asset/img/p4.jpg" alt="" />
+                                <div class="portfolio__items__info">
+                                    <h1>Invading....</h1>
+                                    <a href="#">Detail</a>
+                                </div>
+                            </li>
+                            <li id="p5">
+                                <img src="./asset/img/p5.jpg" alt="" />
+                                <div class="portfolio__items__info">
+                                    <h1>Invading....</h1>
+                                    <a href="#">Detail</a>
+                                </div>
+                            </li>
+                            <li id="p6">
+                                <img src="./asset/img/p6.jpg" alt="" />
+                                <div class="portfolio__items__info">
+                                    <h1>Invading....</h1>
+                                    <a href="#">Detail</a>
+                                </div>
+                            </li>
+                            <li id="p7">
+                                <img src="./asset/img/p7.jpg" alt="" />
+                                <div class="portfolio__items__info">
+                                    <h1>Invading....</h1>
+                                    <a href="#">Detail</a>
+                                </div>
+                            </li>
+                            <li id="p8">
+                                <img src="./asset/img/p8.jpg" alt="" />
+                                <div class="portfolio__items__info">
+                                    <h1>Invading....</h1>
+                                    <a href="#">Detail</a>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
             </div>
 
             <!-- Contact Tab -->
@@ -244,8 +273,10 @@
                         </div>
                         <div class="contact__info">
                             <h2>Contact Info</h2>
-                            <h5>Always available for freelance work if the right project comes along, Feel free to
-                                contact me!</h5>
+                            <h5>
+                                Always available for freelance work if the right project comes
+                                along, Feel free to contact me!
+                            </h5>
                             <div class="contact__info__list">
                                 <ul>
                                     <li>
@@ -279,7 +310,6 @@
                                             <h4>MakeGermanGreatAgain@gmail.com</h4>
                                         </div>
                                     </li>
-
                                 </ul>
                             </div>
                         </div>
