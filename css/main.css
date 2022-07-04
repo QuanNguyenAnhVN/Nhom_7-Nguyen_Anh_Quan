@@ -11,7 +11,7 @@
     }
 
 /* ----------------------------------------------------------
-    Setting Size
+    Custom Property
    ----------------------------------------------------------*/
     
 ::-webkit-scrollbar {
@@ -59,26 +59,61 @@ a{
     text-align: center;
 }
 
-/* DEBUG 
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
+.header h5{font-size: 1rem;}
+.header h1{font-size: 3.5rem;}
+.header h1 span{color:var(--red)}
+.header hr{ width: 25%;}
+
+.tab_container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-color: var(--black-light);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    margin-right: 5rem;
+}
+
+/* DEBUG */
+
 
 #home{
     display: none !important;
 }
 
 #about{
+    display: grid !important;
+}
+
+#portfolio{
     display: none !important;
+}
+
+#blog{
+    display: none !important   
 }
 
 #contact{
     display: none !important;
 }
 
-#portfolio{
-    display: grid !important;
-}
 
-
-DEBUG END */
+/* DEBUG END */
 
  /* ----------------------------------------------------------
     Body
@@ -93,10 +128,12 @@ body{
 }
 
 #main_container{
-    height: 100vh;
-    width: 100vw;
+    position: relative;
+    max-height: 100%;
+    width: 100%;
     background-color: var(--black);
     box-sizing: border-box;
+
 }
 
 /* ----------------------------------------------------------
@@ -109,9 +146,11 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     background-color: var(--black);
     height: 100%;
     width: 7rem;
+    padding: 3rem;
     right: 0;
     overflow: hidden;
     box-sizing: border-box;
@@ -120,7 +159,7 @@ body{
 #nav .container{
     border-radius: 2rem 0 0 2rem;
     background-color: var(--black-light);
-    height: 80%;
+    height: 100%;
     width: 7rem;
 }
 
@@ -164,35 +203,46 @@ body{
    ----------------------------------------------------------*/
 
 #container{
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--black);
-    position: absolute;
     height: 100% ;
-    width: calc(100% - 7rem);
+    width:  100%;
     overflow: hidden;
     box-sizing: border-box;
+    padding: 3rem;
 }
 
+#container .homecolor-box {
+    background-color:var(--red);
+    position: fixed;
+    height: 155%;
+    width: 136%;
+    transform: rotate(-57deg);
+    left: -91%;
+    top: -48%;
+    z-index: 0;
+    box-shadow: 0 0 7px rgb(255 255 255 / 95%);
+}
 /* -----------------------------------------------
     Home 
    -----------------------------------------------*/
-#home{
+.home__container{
     position: relative;
     display: grid;
     grid-template-columns: 35% auto;
-    border-radius: 2rem;
     background-color: var(--black-light);
-    height: 80%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     box-sizing: border-box;
-    
+    margin-right: 5rem;
+    padding: 3rem;
 }
 
-#home div{
+.home__container div{
        animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
@@ -293,26 +343,20 @@ body{
     position: relative;
     border-radius: 2rem;
     background-color: var(--black-light);
-    height: 80%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
     box-sizing: border-box;
-    padding: 40px;
     display: none;
+    margin-right: 5rem;
+    padding: 3rem;
 }
 
 #about div{
        animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-.about__container__header{
-    text-align: center;
-    padding: 2rem;
-}
-.about__container__header h5{font-size: 1rem;}
-.about__container__header h1{font-size: 3.5rem;}
-.about__container__header h1 span{color:var(--red)}
-.about__container__header hr{ width: 50%;}
 
 .about__info{
     margin: 0;
@@ -402,24 +446,40 @@ body{
     background-color: var(--black-light);
 }
 
-.resume__container__header{
-    text-align: center;
-    padding: 2rem;
-}
-.resume__container__header h5{font-size: 1rem;}
-.resume__container__header h1{font-size: 3.5rem;}
-.resume__container__header h1 span{color:var(--red)}
-.resume__container__header hr{ width: 50%;}
 
-.resume__info{
-    margin: 0;
+.resume__container{
+    margin: 0; 
     padding: 0;
     box-sizing: border-box;
     display:grid;
     grid-template-columns: 50% 50%;
-    gap: 0.5rem;
+    gap: 1rem;
+    padding: 1rem;
 }
 
+.resume__container__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume__container__info >*{
+    margin-bottom: 1rem;
+}
+
+.resume__container__info div{
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
+    border-left: 3px solid var(--red);
+    border-radius: 1rem;
+}
+.resume__container__info div >*{
+    margin-bottom: 0.5rem;
+}
+
+.resume__container__info div h2{ color: var(--red);}
+.resume__container__info div h3{ color: var(--white);}
 /* -----------------------------------------------
     Portfolio 
    -----------------------------------------------*/
@@ -427,11 +487,13 @@ body{
     position: relative;
     border-radius: 2rem;
     background-color: var(--black-light);
-    height: 80%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
     box-sizing: border-box;
-    padding: 40px;
+    margin-right: 5rem;
+    padding: 3rem;
     display:none;
 }
 
@@ -439,15 +501,6 @@ body{
        animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-.portfolio__container__header{
-    text-align: center;
-    padding: 30px;
-}
-.portfolio__container__header h5,h1{margin:0;}
-.portfolio__container__header h5{font-size: 1rem;}
-.portfolio__container__header h1{font-size: 3.5rem;}
-.portfolio__container__header h1 span{color:var(--red)}
-.portfolio__container__header hr{ width: 50%;}
 
 .portfolio__container__blog{
     position: relative;
@@ -560,6 +613,68 @@ body{
 .portfolio__items li:hover .portfolio__items__info>*{
     opacity: 1;
 }
+
+/* -----------------------------------------------
+    Blog 
+   -----------------------------------------------*/
+#blog{
+    position: relative;
+    border-radius: 2rem;
+    background-color: var(--black-light);
+    height: 100%;
+    width: 100%;
+    overflow:hidden;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    display: none;
+    margin-right: 5rem;
+    padding: 3rem;
+}
+#blog div{
+    animation: fade-in 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+.blog__main{
+    position: relative;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    
+}
+
+.blog__card{
+    background-color: var(--black-light);
+    border-bottom: 1px solid #1d1d1d;
+    box-shadow: 0 0 10px rgba(8, 5, 5, 0.85);
+    border-radius: 1rem;
+    padding: 1rem;
+    row-gap: 1rem;
+    column-gap: 1rem;   
+    margin-bottom: 1rem; 
+}
+
+.blog__card img{
+    border-radius: 1rem;
+    background-color: var(--white);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.blog__card__info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.blog__card__info >*{
+    width: 100%;
+}
+
+.blog__card__info h6{ font-size: 0.5rem;color: var(--red);}
+.blog__card__info h1 a{ color: var(--white);}
+.blog__card__info p{ color: var(--gray);}
+
+.blog__card__info h1 a:hover{ color:var(--red)}
 /* -----------------------------------------------
     Contact 
    -----------------------------------------------*/
@@ -567,11 +682,13 @@ body{
     position: relative;
     border-radius: 2rem;
     background-color: var(--black-light);
-    height: 80%;
-    width: 90%;
+    height: 100%;
+    width: 100%;
     overflow-x: hidden;
+    overflow-y: scroll;
     box-sizing: border-box;
-    padding: 40px;
+    margin-right: 5rem;
+    padding: 3rem;
     display: none;
 }
 
@@ -584,23 +701,15 @@ body{
     padding: 0;
 }
 
-.contact__container__header{
-    text-align: center;
-    padding: 30px;
-}
-
-.contact__container__header h5,h1{margin:0;}
-.contact__container__header h5{font-size: 1rem;}
-.contact__container__header h1{font-size: 3.5rem;}
-.contact__container__header h1 span{color:var(--red)}
-.contact__container__header hr{ width: 50%;}
 
 .contact__container__body{
+    position: relative;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     display:grid;
     grid-template-columns: 50% 50%;
+    grid-auto-rows: 100%;
     gap: 10px;
 }
 

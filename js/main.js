@@ -1,8 +1,9 @@
-const homeTab = document.getElementById("home");
-const aboutTab = document.getElementById("about");
-const portfolioTab = document.getElementById("portfolio");
-const contactTab = document.getElementById("contact");
-const allTab = document.querySelectorAll("#home, #about, #portfolio, #contact");
+const tabHome = document.getElementById("home");
+const tabAbout = document.getElementById("about");
+const tabPortfolio = document.getElementById("portfolio");
+const tabContact = document.getElementById("contact");
+const tabBlog = document.getElementById("blog");
+const allTab = document.querySelectorAll("#home, #about, #portfolio,#blog ,#contact");
 
 const navHome = document.getElementById("nav_home");
 const navAbout = document.getElementById("nav_about");
@@ -11,15 +12,15 @@ const navBlog = document.getElementById("nav_blog");
 const navContact = document.getElementById("nav_contact");
 
 // Navbar Selection ----------------------------------------------
-document.getElementById("nav_home").addEventListener("click",moveHome);
-document.getElementById("nav_about").addEventListener("click",moveAbout);
-document.getElementById("nav_portfolio").addEventListener("click",movePortfolio);
-document.getElementById("nav_blog").addEventListener("click",moveBlog);
-document.getElementById("nav_contact").addEventListener("click",moveContact);
+navHome.addEventListener("click",moveHome);
+navAbout.addEventListener("click",moveAbout);
+navPortfolio.addEventListener("click",movePortfolio);
+navBlog.addEventListener("click",moveBlog);
+navContact.addEventListener("click",moveContact);
 
 function moveHome() {
     for (let i = 0; i < allTab.length; i++) {
-        if (allTab[i] == homeTab) {
+        if (allTab[i] == tabHome) {
             allTab[i].style.display = "grid";
         } else allTab[i].style.display = "none";
     }
@@ -27,7 +28,7 @@ function moveHome() {
 
 function moveAbout() {
     for (let i = 0; i < allTab.length; i++) {
-        if (allTab[i] == aboutTab) {
+        if (allTab[i] == tabAbout) {
             allTab[i].style.display = "grid";
         } else allTab[i].style.display = "none";
     }
@@ -36,7 +37,16 @@ function moveAbout() {
 
 function movePortfolio() {
     for (let i = 0; i < allTab.length; i++) {
-        if (allTab[i] == portfolioTab) {
+        if (allTab[i] == tabPortfolio) {
+            allTab[i].style.display = "grid";
+        } else allTab[i].style.display = "none";
+    }
+
+}
+
+function moveBlog() {
+    for (let i = 0; i < allTab.length; i++) {
+        if (allTab[i] == tabBlog) {
             allTab[i].style.display = "grid";
         } else allTab[i].style.display = "none";
     }
@@ -45,7 +55,7 @@ function movePortfolio() {
 
 function moveContact() {
     for (let i = 0; i < allTab.length; i++) {
-        if (allTab[i] == contactTab) {
+        if (allTab[i] == tabContact) {
             allTab[i].style.display = "grid";
         } else allTab[i].style.display = "none";
     }
@@ -54,4 +64,4 @@ function moveContact() {
 
 
 
-// Portfolio Selection ------------------------------------------
+// Home Tab ----------------------------------------------
