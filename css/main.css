@@ -91,7 +91,7 @@ a{
 
 /* DEBUG */
 
-
+/* 
 #home{
     display: none !important;
 }
@@ -110,7 +110,7 @@ a{
 
 #contact{
     display: none !important;
-}
+} */
 
 
 /* DEBUG END */
@@ -259,6 +259,7 @@ body{
     height: 100%;
     width: 100%;
     border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
 }
 
 .home__info {
@@ -380,6 +381,7 @@ body{
 .about__info__img >img{
     border-radius: 1rem;
     width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.85);
 }
 
 .about__info__main{

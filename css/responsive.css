@@ -21,6 +21,7 @@
     .tab_container {
         border-radius: 1rem;
     }
+    
 
     /* Main Container Responsive -------------------------------------------------------------*/
     #nav {
@@ -72,6 +73,13 @@
         padding: 10px;
         overflow: hidden;
         box-sizing: border-box;
+    }
+    
+    #container .homecolor-box{
+        height: 125%;
+        left: -145%;
+        top: -57%;
+        width: 207%;
     }
 
     /* Home Tab Responsive */
