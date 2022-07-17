@@ -15,12 +15,12 @@
    ----------------------------------------------------------*/
     
 ::-webkit-scrollbar {
-    width: 5px;   
+    width: 5px !important;   
 }
 
 ::-webkit-scrollbar-track {
     background: var(--black-light); 
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 2rem 0 !important;
     border-radius: 10px;
   }
 

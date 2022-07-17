@@ -1,7 +1,7 @@
 /* PHONE */
 @media only screen and (max-width: 600px) and (max-height:920px) {
     /* Scroll Bar Custom --------------------------------------------------------------------*/
-    ::-webkit-scrollbar {
+    /* ::-webkit-scrollbar {
         width: 5px;
     }
 
@@ -14,7 +14,7 @@
     ::-webkit-scrollbar-thumb {
         background: var(--gray);
         border-radius: 10px;
-    }
+    } */
 
     /* Custom Property ---------------------------------------------------------------------- */
 
