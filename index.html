@@ -80,7 +80,500 @@
 
         // Day 10--------------------------------------------------------------------------------------- 
 
-        
+        // let arr = new Array(1000000).fill(1);
+        // arr[0] = arr[1] = 0
+        // for (var i = 2; i < Math.sqrt(200); i++)
+        //     if (arr[i])
+        //         for (var j = i * i; j < 200; j += i) arr[j] = 0
+
+        // let array1 = []
+        // let n = Number(prompt('Input n'))
+        // let sumpos = 0, sum5 = 0, sumd = 0, sumc = 0
+        // for (let i = 0; i < n; i++) {
+        //     array1.push([])
+        //     for (let j = 0; j < n; j++) {
+        //         let m = Number(prompt(`input array1[${i}][${j}]`))
+        //         array1[i].push(m)
+        //         if (m > 0) sumpos += m
+        //         if ((i + j) % 5 == 0) sum5 += m
+        //         if (i == j) sumd += m
+        //         if (i == 0 || j == 0 || i == n - 1 || j == n - 1) sumc += m
+        //     }
+        // }
+        // document.write('Input array:')
+        // document.write(`<br>`)
+        // for (let i = 0; i < n; i++) {
+        //     for (let j = 0; j < n; j++) {
+        //         document.write(`${array1[i][j]}   `)
+        //     }
+        //     document.write(`<br>`)
+        // }
+        // document.write('Sum of positive nums:', sumpos)
+        // document.write(`<br>`)
+        // document.write('Sum of index mod 5 = 0:', sum5)
+        // document.write(`<br>`)
+        // document.write('Prime numbers in each line:')
+        // document.write(`<br>`)
+        // for (let i = 0; i < n; i++) {
+        //     for (let j = 0; j < n; j++)
+        //         if (arr[array1[i][j]]) document.write(array1[i][j] + " ")
+        //     document.write(`<br>`)
+        // }
+
+        // let max = [], min = []
+
+        // function sort_inc_byline() {
+        //     document.write('Sort increase by line:')
+        //     document.write('<br>')
+        //     for (let i = 0; i < n; i++) {
+        //         let subarr = []
+        //         document.write(`Line ${i} :`)
+        //         for (let j = 0; j < n; j++) subarr.push(array1[i][j])
+        //         subarr.sort()
+        //         max.push(subarr[n - 1])
+        //         min.push(subarr[0])
+        //         for (let y = 0; y < n; y++)
+        //             document.write(`${subarr[y]}  `)
+        //         document.write("<br>")
+        //     }
+        // }
+        // function sort_dec_byline() {
+        //     document.write('Sort decrease by line:')
+        //     document.write('<br>')
+        //     for (let i = 0; i < n; i++) {
+        //         let subarr = []
+        //         document.write(`Line ${i} :`)
+        //         for (let j = 0; j < n; j++) subarr.push(array1[i][j])
+        //         subarr.sort()
+        //         for (let y = n - 1; y >= 0; y--)
+        //             document.write(`${subarr[y]}  `)
+        //         document.write("<br>")
+        //     }
+        // }
+        // function sort_inc_byrow() {
+        //     document.write('Sort increase by row:')
+        //     document.write('<br>')
+        //     for (let i = 0; i < n; i++) {
+        //         let subarr = []
+        //         document.write(`Row ${i} :`)
+        //         for (let j = 0; j < n; j++) subarr.push(array1[i][j])
+        //         subarr.sort()
+        //         max.push(subarr[n - 1])
+        //         min.push(subarr[0])
+        //         for (let y = n - 1; y >= 0; y--)
+        //             document.write(`${subarr[y]}  `)
+        //         document.write('<br>')
+        //     }
+        // }
+
+        // function sort_dec_byrow() {
+        //     document.write('Sort decrease by row:')
+        //     document.write('<br>')
+        //     for (let i = 0; i < n; i++) {
+        //         let subarr = [];
+        //         document.write(`Row ${i} :`);
+        //         for (let j = 0; j < n; j++) subarr.push(array1[j][i]);
+        //         subarr.sort();
+        //         for (let y = n - 1; y >= 0; y--)
+        //             document.write(`${subarr[y]}  `);
+        //         document.write("<br>")
+        //     }
+        // }
+
+        // sort_inc_byline();
+        // sort_dec_byline();
+        // sort_inc_byrow();
+        // sort_dec_byrow();
+        // for (let i = 0; i < n; i++) document.write(`Max in line ${i}: ${max[i]} <br>`);
+        // for (let i = 0; i < n; i++) document.write(`Min in line ${i}: ${min[i]} <br>`);
+        // for (let i = n; i < 2 * n; i++) document.write(`Max in row ${i}: ${max[i]} <br>`);
+        // for (let i = n; i < 2 * n; i++) document.write(`Min in row ${i}: ${max[i]} <br>`);
+        // document.write(`Max array1 = ${Math.max(...max)} <br>`);
+        // document.write(`Min array1 = ${Math.min(...min)} <br>`);
+
+        // Day 11--------------------------------------------------------------------------------------- 
+
+        // let A = [];
+        // for (let i = 0; i < 10; i++) {
+        //     A[i] = Number(prompt('Insert Item in Array: '));
+        // }
+        // document.write('Your Array: ');
+        // for (let i = 0; i < 10; i++) {
+        //     document.write(A[i] + " ");
+        // }
+        // document.write("<br>");
+        // function lowtohigh(B) {
+        //     for (i = 0; i < 9; i++) {
+        //         let min = B[i];
+        //         let vitri = i;
+        //         for (let ii = i + 1; ii < 10; ii++) {
+        //             if (B[ii] < min) {
+        //                 min = B[ii]; vitri = ii;
+        //             }
+        //         }
+        //         if (vitri == i)
+        //             continue;
+        //         else {
+        //             let c = B[i];
+        //             B[i] = B[vitri];
+        //             B[vitri] = c;
+        //         }
+        //     }
+
+        // }
+        // function hightolow(B) {
+        //     for (i = 0; i < 9; i++) {
+        //         let max = B[i];
+        //         let vitri = i;
+        //         for (let ii = i + 1; ii < 10; ii++) {
+        //             if (B[ii] > max) {
+        //                 max = B[ii]; vitri = ii;
+        //             }
+        //         }
+        //         if (vitri == i)
+        //             continue;
+        //         else {
+        //             let c = B[i];
+        //             B[i] = B[vitri];
+        //             B[vitri] = c;
+        //         }
+        //     }
+
+        // }
+        // lowtohigh(A);
+        // document.write('Array Items from low to high: ');
+        // for (let i = 0; i < 10; i++) {
+        //     document.write(A[i] + " ");
+        // }
+        // document.write("<br>");
+        // hightolow(A);
+        // document.write('Array item from high to low: ');
+        // for (let i = 0; i < 10; i++) {
+        //     document.write(A[i] + " ");
+        // }
+
+        // Day 12--------------------------------------------------------------------------------------- 
+
+        let Hiep = {
+            name: "Hiep",
+            age: 18,
+            address: "hn",
+            habit: "dabong",
+        };
+
+        let Quan = {
+            name: "Quan",
+            age: 24,
+            address: "hn",
+            habit: "choigame",
+        };
+
+        let Ngoc = {
+            name: "Ngoc",
+            age: 20,
+            address: "hcm",
+            habit: "docsach",
+        };
+
+        let Bap = {
+            name: "Bap",
+            age: 12,
+            address: "hn",
+            habit: "choigame",
+        };
+
+        let Tien = {
+            name: "Tien",
+            age: 55,
+            address: "hcm",
+            habit: "docsach",
+        };
+        let Hai = {
+            name: "Hai",
+            age: 21,
+            address: "hcm",
+            habit: "choigame",
+        };
+        let Long = {
+            name: "Long",
+            age: 13,
+            address: "hcm",
+            habit: "docsach",
+        };
+        let Duc = {
+            name: "Duc",
+            age: 14,
+            address: "hn",
+            habit: "dulich",
+        };
+        let Khanh = {
+            name: "Khanh",
+            age: 31,
+            address: "tn",
+            habit: "dulich",
+        };
+        let hiep = {
+            name: "Hiep",
+            age: 40,
+            address: "hn",
+            habit: "dabong",
+        };
+        let tongtren18 = 0;
+        let tongduoi18 = 0;
+        var ListUser = [Hiep, Quan, Ngoc, Bap, Tien, Hai, Long, Duc, Khanh, hiep];
+        document.write("Array before update: ");
+        document.write("<br>");
+        //a-start
+        document.write("Person whose age is over 18: ");
+        for (let i = 0; i < ListUser.length; i++) {
+            if (ListUser[i].age >= 18) {
+
+                document.write(ListUser[i].name + ", ");
+                tongtren18 += ListUser[i].age;
+
+            }
+
+        }
+        document.write("<br>");
+        document.write("Sum of all people: ", tongtren18);
+        document.write("<br>");
+        document.write("People whose age is lower than 18: ");
+        for (let i = 0; i < ListUser.length; i++) {
+            if (ListUser[i].age < 18) {
+                document.write(ListUser[i].name + ", ");
+                tongduoi18 += ListUser[i].age;
+
+            }
+        }
+        document.write(" Sum of people whose age is lower than 18: ", tongduoi18);
+
+        document.write("People who have the same habits");
+        for (let i = 0; i < ListUser.length - 1; i++) {
+            for (let j = i + 1; j < ListUser.length; j++) {
+                if (ListUser[i].habit === ListUser[j].habit) {
+                    document.write(ListUser[i].name + " & " + ListUser[j].name);
+
+                }
+            }
+        }
+
+        let c = prompt('People needed to custome').toLowerCase();
+        for (let i = 0; i < ListUser.length; i++) {
+            if (ListUser[i].name.toLowerCase() === c) {
+                ListUser[i].name = prompt(`New name`);
+                ListUser[i].age = prompt(`New age ${ListUser[i].name}`);
+                ListUser[i].address = prompt(`Address ${ListUser[i].name} `);
+                ListUser[i].habit = prompt(`Habit ${ListUser[i].name}`);
+            }
+        }
+
+        let d = prompt('People you want to delete').toLowerCase();
+        let vitri = -1;
+        for (let i = 0; i < ListUser.length; i++) {
+            if (ListUser[i].name.toLowerCase() === d) {
+                vitri = i;
+
+            }
+        }
+        if (vitri >= 0)
+            ListUser.splice(vitri, 1);
+        document.write("<br>");
+        document.write("Array after update: ");
+        for (let i = 0; i < ListUser.length; i++) {
+            document.write("<br>");
+            document.write("name:  ");
+            document.write(ListUser[i].name);
+            document.write("<br>");
+            document.write("Age:  ");
+            document.write(ListUser[i].age);
+            document.write("<br>");
+            document.write("Address:  ");
+            document.write(ListUser[i].address);
+            document.write("<br>");
+            document.write("Habit:  ");
+            document.write(ListUser[i].habit);
+            document.write("<br>");
+            document.write("-----------------");
+        }
+
+        for (let i = 0; i < ListUser.length; i++) {
+            for (j = i + 1; j < ListUser.length; j++) {
+                if (ListUser[i].name.toLowerCase() === ListUser[j].name.toLowerCase() && ListUser[i].habit === ListUser[j].habit) {
+                    ListUser.splice(j, 1);
+                    ListUser.splice(i, 1);
+                }
+
+            }
+        }
+        document.write("<br>");
+        document.write("Array after update (collaped name and habit): ");
+        for (let i = 0; i < ListUser.length; i++) {
+            document.write("<br>");
+            document.write("Name:  ");
+            document.write(ListUser[i].name);
+            document.write("<br>");
+            document.write("Age:  ");
+            document.write(ListUser[i].age);
+            document.write("<br>");
+            document.write("Address:  ");
+            document.write(ListUser[i].address);
+            document.write("<br>");
+            document.write("Habit:  ");
+            document.write(ListUser[i].habit);
+            document.write("<br>");
+            document.write("-----------------");
+        }
+
+        // Xóa tất cả các bạn có cùng tên và sở thích-->xong
+
+
+        function bedenlon(B) {
+            for (i = 0; i < B.length; i++) {
+                let min = B[i].age;
+                let vitri = i;
+                for (let ii = i + 1; ii < B.length; ii++) {
+                    if (B[ii].age < min) {
+                        min = B[ii].age;
+                        vitri = ii;
+                    }
+                }
+                if (vitri == i)
+                    continue;
+                else {
+                    let y = B[i].name;
+                    B[i].name = B[vitri].name;
+                    B[vitri].name = y;
+                    let x = B[i].age;
+                    B[i].age = B[vitri].age;
+                    B[vitri].age = x;
+                }
+            }
+        }
+        bedenlon(ListUser);
+        document.write("<br>");
+        document.write("Array Sort ( from low to high: ");
+        for (let i = 0; i < ListUser.length; i++) {
+            document.write("<br>");
+            document.write("Name:  ");
+            document.write(ListUser[i].name);
+
+        }
+
+        // Sắp sếp các bạn theo đổ tuổi bes ddeens lons--> xong
+
+
+        function highToLow(B) {
+            for (i = 0; i < B.length; i++) {
+                let max = B[i].age;
+                let vitri = i;
+                for (let ii = i + 1; ii < B.length; ii++) {
+                    if (B[ii].age > max) {
+                        max = B[ii].age;
+                        vitri = ii;
+                    }
+                }
+                if (vitri == i)
+                    continue;
+                else {
+                    let y = B[i].name;
+                    B[i].name = B[vitri].name;
+                    B[vitri].name = y;
+                    let x = B[i].age;
+                    B[i].age = B[vitri].age;
+                    B[vitri].age = x;
+                }
+            }
+        }
+        highToLow(ListUser);
+        document.write("<br>");
+        document.write("Array sort ( from high to low) : ");
+        for (let i = 0; i < ListUser.length; i++) {
+            document.write("<br>");
+            document.write("Name:  ");
+            document.write(ListUser[i].name);
+
+        }
+        // Sắp sếp các bạn theo đổ tuổi lớn đến bé--> xong
+
+        // let chuoi1="Long";
+        // let chuoi2="quy";
+        // if(chuoi1>chuoi2) document.write('Yes');
+        // else document.write('No');
+        function sortNameAZ(B) {
+            for (i = 0; i < B.length; i++) {
+                let min = B[i].name;
+                let vitri = i;
+                for (let ii = i + 1; ii < B.length; ii++) {
+                    if (B[ii].name < min) {
+                        min = B[ii].name;
+                        vitri = ii;
+                    }
+                }
+                if (vitri == i)
+                    continue;
+                else {
+                    let y = B[i].name;
+                    B[i].name = B[vitri].name;
+                    B[vitri].name = y;
+
+                }
+            }
+        }
+        sortNameAZ(ListUser);
+        document.write("<br>");
+        document.write("Array update ( alphabel A to Z): ");
+        for (let i = 0; i < ListUser.length; i++) {
+            document.write("<br>");
+            document.write("Name:  ");
+            document.write(ListUser[i].name);
+        }
+        // /SẮP XẾP THEO BẢNG CHỮ CÁI THEO CHIỀU THUẬN:-->xong
+        function sortNameZA(B) {
+            for (i = 0; i < B.length; i++) {
+                let max = B[i].name;
+                let vitri = i;
+                for (let ii = i + 1; ii < B.length; ii++) {
+                    if (B[ii].name > max) {
+                        max = B[ii].name;
+                        vitri = ii;
+                    }
+                }
+                if (vitri == i)
+                    continue;
+                else {
+                    let y = B[i].name;
+                    B[i].name = B[vitri].name;
+                    B[vitri].name = y;
+
+                }
+            }
+        }
+        sortNameZA(ListUser);
+        document.write("<br>");
+        document.write("Array update ( alphabel Z to A): ");
+        for (let i = 0; i < ListUser.length; i++) {
+            document.write("<br>");
+            document.write("Name:  ");
+            document.write(ListUser[i].name);
+        }
+// /SẮP XẾP THEO BẢNG CHỮ CÁI THEO CHIỀU NGHỊCH:-->xong
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
